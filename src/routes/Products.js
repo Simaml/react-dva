@@ -10,8 +10,10 @@ const Products = ({ dispatch, products }) => {
         });
     }
     return (
-        <div>
-            <a href="/">返回</a>
+        <div style={{ padding: 40 }}>
+            <a style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 10 }} href="/">
+                返回
+            </a>
             <ProductList onDelete={handleDelete} products={products} />
         </div>
     );
